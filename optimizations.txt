@@ -2,6 +2,9 @@
 sudo sh -c ulimit -HSn 200000
 #(ulimit -n 1000000)
 
+# Turn of swap usage (warning: do so only if enough ram is available)
+swapoff -a
+
 # Edit: /etc/security/limits.conf
 * soft nofile 200000
 * hard nofile 200000
